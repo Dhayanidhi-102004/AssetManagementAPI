@@ -1,0 +1,138 @@
+2026-06-22 10:13:16.737 +05:30 [INF] User profile is available. Using 'C:\Users\dhaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-22 10:13:17.305 +05:30 [INF] Now listening on: https://localhost:7256
+2026-06-22 10:13:17.309 +05:30 [INF] Now listening on: http://localhost:5225
+2026-06-22 10:13:17.454 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 10:13:17.457 +05:30 [INF] Hosting environment: Development
+2026-06-22 10:13:17.470 +05:30 [INF] Content root path: C:\Users\dhaya\source\repos\AssetManagementAPI\AssetManagementAPI
+2026-06-22 10:13:20.852 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger - null null
+2026-06-22 10:13:21.268 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger - 301 0 null 448.9865ms
+2026-06-22 10:13:21.282 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - null null
+2026-06-22 10:13:21.500 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - 200 null text/html;charset=utf-8 218.4111ms
+2026-06-22 10:13:21.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/swagger-ui.css - null null
+2026-06-22 10:13:21.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/swagger-ui-bundle.js - null null
+2026-06-22 10:13:21.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 10:13:21.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-22 10:13:21.567 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 55.4415ms
+2026-06-22 10:13:21.607 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-06-22 10:13:21.608 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-06-22 10:13:21.624 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/swagger-ui.css - 200 152034 text/css 113.4507ms
+2026-06-22 10:13:21.636 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 125.3892ms
+2026-06-22 10:13:21.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/_vs/browserLink - null null
+2026-06-22 10:13:21.682 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-06-22 10:13:21.685 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 174.262ms
+2026-06-22 10:13:21.854 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/_vs/browserLink - 200 null text/javascript; charset=UTF-8 219.0391ms
+2026-06-22 10:13:21.950 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - null null
+2026-06-22 10:13:22.023 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 73.4966ms
+2026-06-22 10:40:28.709 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Audit?page=1&pageSize=5 - null null
+2026-06-22 10:40:28.887 +05:30 [INF] Executing endpoint 'AuditController.GetAuditLogs (AssetManagementAPI)'
+2026-06-22 10:40:28.981 +05:30 [INF] Route matched with {action = "GetAuditLogs", controller = "Audit"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuditLogs(System.String, System.String, Int32, Int32) on controller AuditController (AssetManagementAPI).
+2026-06-22 10:40:32.611 +05:30 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AuditLogs] AS [a]
+2026-06-22 10:40:32.899 +05:30 [INF] Executed DbCommand (70ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Action], [a].[CreatedAt], [a].[Details], [a].[PerformedBy]
+FROM [AuditLogs] AS [a]
+ORDER BY [a].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-06-22 10:40:33.087 +05:30 [INF] Executing OkObjectResult, writing value of type 'AssetManagementAPI.DTOs.Common.PagedResponseDTO`1[[AssetManagementAPI.DTOs.Asset.AuditLogResponseDTO, AssetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 10:40:33.154 +05:30 [INF] Executed action AuditController.GetAuditLogs (AssetManagementAPI) in 4155.1007ms
+2026-06-22 10:40:33.159 +05:30 [INF] Executed endpoint 'AuditController.GetAuditLogs (AssetManagementAPI)'
+2026-06-22 10:40:33.191 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Audit?page=1&pageSize=5 - 200 null application/json; charset=utf-8 4482.5173ms
+2026-06-22 10:48:37.443 +05:30 [INF] User profile is available. Using 'C:\Users\dhaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-22 10:48:38.516 +05:30 [INF] Now listening on: https://localhost:7256
+2026-06-22 10:48:38.528 +05:30 [INF] Now listening on: http://localhost:5225
+2026-06-22 10:48:38.859 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-22 10:48:38.864 +05:30 [INF] Hosting environment: Development
+2026-06-22 10:48:38.869 +05:30 [INF] Content root path: C:\Users\dhaya\source\repos\AssetManagementAPI\AssetManagementAPI
+2026-06-22 10:48:39.473 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - null null
+2026-06-22 10:48:40.071 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-22 10:48:40.073 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/_vs/browserLink - null null
+2026-06-22 10:48:40.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - 200 null text/html;charset=utf-8 628.8602ms
+2026-06-22 10:48:40.100 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 29.5414ms
+2026-06-22 10:48:40.197 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/_vs/browserLink - 200 null text/javascript; charset=UTF-8 124.3859ms
+2026-06-22 10:48:40.359 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - null null
+2026-06-22 10:48:40.407 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 58.8116ms
+2026-06-22 10:49:14.344 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/login - application/json 62
+2026-06-22 10:49:14.390 +05:30 [INF] CORS policy execution successful.
+2026-06-22 10:49:14.557 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.AuthController.Login (AssetManagementAPI)'
+2026-06-22 10:49:14.655 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(AssetManagementAPI.DTOs.LoginDto) on controller AssetManagementAPI.Controllers.AuthController (AssetManagementAPI).
+2026-06-22 10:49:18.689 +05:30 [INF] Executed DbCommand (142ms) [Parameters=[@__loginDto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__loginDto_Email_0
+2026-06-22 10:49:20.268 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-22 10:49:20.323 +05:30 [INF] Executed action AssetManagementAPI.Controllers.AuthController.Login (AssetManagementAPI) in 5638.3955ms
+2026-06-22 10:49:20.328 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.AuthController.Login (AssetManagementAPI)'
+2026-06-22 10:49:20.359 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/login - 200 null application/json; charset=utf-8 6016.22ms
+2026-06-22 10:50:15.055 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7256/api/AssetRequest/request/1 - null 0
+2026-06-22 10:50:15.114 +05:30 [INF] CORS policy execution successful.
+2026-06-22 10:50:15.290 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.AssetRequestController.CreateAssetRequest (AssetManagementAPI)'
+2026-06-22 10:50:15.305 +05:30 [INF] Route matched with {action = "CreateAssetRequest", controller = "AssetRequest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CreateAssetRequest(Int32) on controller AssetManagementAPI.Controllers.AssetRequestController (AssetManagementAPI).
+2026-06-22 10:50:15.513 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+WHERE [a].[Id] = @__p_0
+2026-06-22 10:50:15.586 +05:30 [WRN] Asset 1 is not available for request
+2026-06-22 10:50:15.591 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'System.String'.
+2026-06-22 10:50:15.596 +05:30 [INF] Executed action AssetManagementAPI.Controllers.AssetRequestController.CreateAssetRequest (AssetManagementAPI) in 284.1561ms
+2026-06-22 10:50:15.600 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.AssetRequestController.CreateAssetRequest (AssetManagementAPI)'
+2026-06-22 10:50:15.603 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7256/api/AssetRequest/request/1 - 400 null text/plain; charset=utf-8 550.2001ms
+2026-06-22 10:50:36.163 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - null null
+2026-06-22 10:50:36.196 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-06-22 10:50:36.209 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-06-22 10:50:36.214 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - 403 0 null 51.5627ms
+2026-06-22 10:50:58.410 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/AssetRequest/myrequests?page=1&pageSize=5 - null null
+2026-06-22 10:50:58.433 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.AssetRequestController.GetMyRequests (AssetManagementAPI)'
+2026-06-22 10:50:58.447 +05:30 [INF] Route matched with {action = "GetMyRequests", controller = "AssetRequest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetMyRequests(Int32, Int32) on controller AssetManagementAPI.Controllers.AssetRequestController (AssetManagementAPI).
+2026-06-22 10:50:58.479 +05:30 [INF] Fetching requests for employee marimuthu@gmail.com
+2026-06-22 10:50:58.733 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__email_0
+2026-06-22 10:50:58.862 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@__employee_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetRequests] AS [a]
+WHERE [a].[EmployeeId] = @__employee_Id_0
+2026-06-22 10:50:58.916 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__employee_Id_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32), @__p_2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AssetId], [a].[EmployeeId], [a].[RequestDate], [a].[Status]
+FROM [AssetRequests] AS [a]
+WHERE [a].[EmployeeId] = @__employee_Id_0
+ORDER BY [a].[RequestDate] DESC
+OFFSET @__p_1 ROWS FETCH NEXT @__p_2 ROWS ONLY
+2026-06-22 10:50:58.971 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__request_EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__request_EmployeeId_0
+2026-06-22 10:50:58.996 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__request_AssetId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+WHERE [a].[Id] = @__request_AssetId_0
+2026-06-22 10:50:59.026 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__request_EmployeeId_0
+2026-06-22 10:50:59.039 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__request_AssetId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+WHERE [a].[Id] = @__request_AssetId_0
+2026-06-22 10:50:59.050 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__request_EmployeeId_0
+2026-06-22 10:50:59.063 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_AssetId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+WHERE [a].[Id] = @__request_AssetId_0
+2026-06-22 10:50:59.073 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__request_EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__request_EmployeeId_0
+2026-06-22 10:50:59.081 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_AssetId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+WHERE [a].[Id] = @__request_AssetId_0
+2026-06-22 10:50:59.089 +05:30 [INF] Executing OkObjectResult, writing value of type 'AssetManagementAPI.DTOs.Common.PagedResponseDTO`1[[AssetManagementAPI.DTOs.Asset.AssetRequestResponseDTO, AssetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-22 10:50:59.107 +05:30 [INF] Executed action AssetManagementAPI.Controllers.AssetRequestController.GetMyRequests (AssetManagementAPI) in 652.6803ms
+2026-06-22 10:50:59.111 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.AssetRequestController.GetMyRequests (AssetManagementAPI)'
+2026-06-22 10:50:59.113 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/AssetRequest/myrequests?page=1&pageSize=5 - 200 null application/json; charset=utf-8 703.8604ms
