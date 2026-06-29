@@ -244,3 +244,4 @@ C:\Users\dhaya\source\repos\AssetManagementAPI\AssetManagementAPI.Tests\bin\Debu
 C:\Users\dhaya\source\repos\AssetManagementAPI\AssetManagementAPI.Tests\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\dhaya\source\repos\AssetManagementAPI\AssetManagementAPI.Tests\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\dhaya\source\repos\AssetManagementAPI\AssetManagementAPI.Tests\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\dhaya\source\repos\AssetManagementAPI\AssetManagementAPI.Tests\obj\Debug\net8.0\AssetManagementAPI.Tests.sourcelink.json

@@ -14,5 +14,6 @@ namespace AssetManagementAPI.Data
         public DbSet<AssetRequest> AssetRequests { get; set; }
         public DbSet<AssetAllocation> AssetAllocations { get; set; }
         public DbSet<AuditLog> AuditLogs { get; set; }
+        public DbSet<ServiceRequest> ServiceRequests { get; set; }
     }
 }

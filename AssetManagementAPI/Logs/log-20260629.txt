@@ -1,0 +1,425 @@
+2026-06-29 09:16:27.937 +05:30 [INF] User profile is available. Using 'C:\Users\dhaya\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-06-29 09:16:29.560 +05:30 [INF] Now listening on: https://localhost:7256
+2026-06-29 09:16:29.596 +05:30 [INF] Now listening on: http://localhost:5225
+2026-06-29 09:16:31.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger - null null
+2026-06-29 09:16:31.217 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-06-29 09:16:31.220 +05:30 [INF] Hosting environment: Development
+2026-06-29 09:16:31.221 +05:30 [INF] Content root path: C:\Users\dhaya\source\repos\AssetManagementAPI\AssetManagementAPI
+2026-06-29 09:16:33.666 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger - 301 0 null 2576.9319ms
+2026-06-29 09:16:33.683 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/index.html - null null
+2026-06-29 09:16:34.038 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/swagger-ui-standalone-preset.js - null null
+2026-06-29 09:16:34.048 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/_vs/browserLink - null null
+2026-06-29 09:16:34.038 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/swagger-ui-bundle.js - null null
+2026-06-29 09:16:34.056 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/index.html - 200 null text/html;charset=utf-8 373.4084ms
+2026-06-29 09:16:34.215 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-06-29 09:16:34.038 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/swagger-ui.css - null null
+2026-06-29 09:16:34.430 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-06-29 09:16:34.490 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 451.6114ms
+2026-06-29 09:16:34.484 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/_vs/browserLink - 200 null text/javascript; charset=UTF-8 436.8827ms
+2026-06-29 09:16:34.501 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 462.5931ms
+2026-06-29 09:16:34.050 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - null null
+2026-06-29 09:16:34.507 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-06-29 09:16:34.557 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/_framework/aspnetcore-browser-refresh.js - 200 16521 application/javascript; charset=utf-8 506.6188ms
+2026-06-29 09:16:34.572 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/swagger-ui.css - 200 152034 text/css 538.9263ms
+2026-06-29 09:16:34.868 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - null null
+2026-06-29 09:16:34.922 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/swagger/favicon-32x32.png - null null
+2026-06-29 09:16:34.961 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-06-29 09:16:34.964 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/favicon-32x32.png - 200 628 image/png 43.0418ms
+2026-06-29 09:16:35.031 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 163.8889ms
+2026-06-29 09:16:51.988 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Auth/login - null null
+2026-06-29 09:16:52.017 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:16:52.023 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Auth/login - 204 null null 35.2741ms
+2026-06-29 09:16:52.028 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7256/api/Auth/login - application/json 47
+2026-06-29 09:16:52.057 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:16:52.163 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.AuthController.Login (AssetManagementAPI)'
+2026-06-29 09:16:52.227 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(AssetManagementAPI.DTOs.LoginDto) on controller AssetManagementAPI.Controllers.AuthController (AssetManagementAPI).
+2026-06-29 09:16:54.937 +05:30 [INF] Executed DbCommand (174ms) [Parameters=[@__loginDto_Email_0='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Email] = @__loginDto_Email_0
+2026-06-29 09:16:55.939 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-29 09:16:55.971 +05:30 [INF] Executed action AssetManagementAPI.Controllers.AuthController.Login (AssetManagementAPI) in 3732.3247ms
+2026-06-29 09:16:55.974 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.AuthController.Login (AssetManagementAPI)'
+2026-06-29 09:16:56.000 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7256/api/Auth/login - 200 null application/json; charset=utf-8 3971.5124ms
+2026-06-29 09:16:59.045 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Dashboard/stats - null null
+2026-06-29 09:16:59.047 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Dashboard/stats - null null
+2026-06-29 09:16:59.084 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:16:59.351 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Dashboard/stats - 204 null null 306.4533ms
+2026-06-29 09:16:59.356 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:16:59.368 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Dashboard/stats - null null
+2026-06-29 09:16:59.528 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Dashboard/stats - 204 null null 480.6681ms
+2026-06-29 09:16:59.620 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:16:59.881 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI)'
+2026-06-29 09:16:59.895 +05:30 [INF] Route matched with {action = "GetDashboardStats", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDashboardStats() on controller AssetManagementAPI.Controllers.DashboardController (AssetManagementAPI).
+2026-06-29 09:17:00.119 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+2026-06-29 09:17:00.150 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+WHERE [a].[Status] = N'Available'
+2026-06-29 09:17:00.167 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetAllocations] AS [a]
+WHERE [a].[Status] = N'Active'
+2026-06-29 09:17:00.183 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetAllocations] AS [a]
+WHERE [a].[Status] = N'Returned'
+2026-06-29 09:17:00.204 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2026-06-29 09:17:00.220 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetRequests] AS [a]
+WHERE [a].[Status] = N'Pending'
+2026-06-29 09:17:00.225 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-29 09:17:00.232 +05:30 [INF] Executed action AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI) in 331.2718ms
+2026-06-29 09:17:00.240 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Dashboard/stats - null null
+2026-06-29 09:17:00.241 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI)'
+2026-06-29 09:17:00.246 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:00.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Dashboard/stats - 200 null application/json; charset=utf-8 880.1834ms
+2026-06-29 09:17:00.265 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI)'
+2026-06-29 09:17:00.273 +05:30 [INF] Route matched with {action = "GetDashboardStats", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDashboardStats() on controller AssetManagementAPI.Controllers.DashboardController (AssetManagementAPI).
+2026-06-29 09:17:00.409 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+2026-06-29 09:17:00.425 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+WHERE [a].[Status] = N'Available'
+2026-06-29 09:17:00.437 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetAllocations] AS [a]
+WHERE [a].[Status] = N'Active'
+2026-06-29 09:17:00.443 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetAllocations] AS [a]
+WHERE [a].[Status] = N'Returned'
+2026-06-29 09:17:00.449 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2026-06-29 09:17:00.456 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetRequests] AS [a]
+WHERE [a].[Status] = N'Pending'
+2026-06-29 09:17:00.460 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-29 09:17:00.462 +05:30 [INF] Executed action AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI) in 184.6228ms
+2026-06-29 09:17:00.465 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI)'
+2026-06-29 09:17:00.467 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Dashboard/stats - 200 null application/json; charset=utf-8 228.2724ms
+2026-06-29 09:17:15.830 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Asset/all?page=1&pageSize=5&category=&status=&sortBy=&sortDirection= - null null
+2026-06-29 09:17:15.831 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Asset/all?page=1&pageSize=5&category=&status=&sortBy=&sortDirection= - null null
+2026-06-29 09:17:15.838 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:15.841 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:15.842 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Asset/all?page=1&pageSize=5&category=&status=&sortBy=&sortDirection= - 204 null null 11.5414ms
+2026-06-29 09:17:15.845 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Asset/all?page=1&pageSize=5&category=&status=&sortBy=&sortDirection= - 204 null null 13.3189ms
+2026-06-29 09:17:15.846 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Asset/all?page=1&pageSize=5&category=&status=&sortBy=&sortDirection= - null null
+2026-06-29 09:17:15.860 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:15.863 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.AssetController.GetAllAssets (AssetManagementAPI)'
+2026-06-29 09:17:15.871 +05:30 [INF] Route matched with {action = "GetAllAssets", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllAssets(System.String, System.String, System.String, System.String, Int32, Int32) on controller AssetManagementAPI.Controllers.AssetController (AssetManagementAPI).
+2026-06-29 09:17:16.086 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+2026-06-29 09:17:16.106 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+ORDER BY [a].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-06-29 09:17:16.159 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__asset_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetId], [a].[AssignedDate], [a].[EmployeeId], [a].[ReturnedDate], [a].[Status]
+FROM [AssetAllocations] AS [a]
+WHERE [a].[AssetId] = @__asset_Id_0 AND [a].[Status] = N'Active'
+2026-06-29 09:17:16.181 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__asset_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetId], [a].[AssignedDate], [a].[EmployeeId], [a].[ReturnedDate], [a].[Status]
+FROM [AssetAllocations] AS [a]
+WHERE [a].[AssetId] = @__asset_Id_0 AND [a].[Status] = N'Active'
+2026-06-29 09:17:16.187 +05:30 [INF] Executing OkObjectResult, writing value of type 'AssetManagementAPI.DTOs.Common.PagedResponseDTO`1[[AssetManagementAPI.DTOs.Asset.AssetResponseDTO, AssetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-29 09:17:16.200 +05:30 [INF] Executed action AssetManagementAPI.Controllers.AssetController.GetAllAssets (AssetManagementAPI) in 326.3217ms
+2026-06-29 09:17:16.206 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Asset/all?page=1&pageSize=5&category=&status=&sortBy=&sortDirection= - null null
+2026-06-29 09:17:16.221 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.AssetController.GetAllAssets (AssetManagementAPI)'
+2026-06-29 09:17:16.230 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:16.248 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Asset/all?page=1&pageSize=5&category=&status=&sortBy=&sortDirection= - 200 null application/json; charset=utf-8 402.6881ms
+2026-06-29 09:17:16.261 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.AssetController.GetAllAssets (AssetManagementAPI)'
+2026-06-29 09:17:16.277 +05:30 [INF] Route matched with {action = "GetAllAssets", controller = "Asset"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAllAssets(System.String, System.String, System.String, System.String, Int32, Int32) on controller AssetManagementAPI.Controllers.AssetController (AssetManagementAPI).
+2026-06-29 09:17:16.291 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+2026-06-29 09:17:16.298 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+ORDER BY [a].[Id]
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-06-29 09:17:16.309 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__asset_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetId], [a].[AssignedDate], [a].[EmployeeId], [a].[ReturnedDate], [a].[Status]
+FROM [AssetAllocations] AS [a]
+WHERE [a].[AssetId] = @__asset_Id_0 AND [a].[Status] = N'Active'
+2026-06-29 09:17:16.313 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__asset_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetId], [a].[AssignedDate], [a].[EmployeeId], [a].[ReturnedDate], [a].[Status]
+FROM [AssetAllocations] AS [a]
+WHERE [a].[AssetId] = @__asset_Id_0 AND [a].[Status] = N'Active'
+2026-06-29 09:17:16.316 +05:30 [INF] Executing OkObjectResult, writing value of type 'AssetManagementAPI.DTOs.Common.PagedResponseDTO`1[[AssetManagementAPI.DTOs.Asset.AssetResponseDTO, AssetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-29 09:17:16.320 +05:30 [INF] Executed action AssetManagementAPI.Controllers.AssetController.GetAllAssets (AssetManagementAPI) in 38.5181ms
+2026-06-29 09:17:16.321 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.AssetController.GetAllAssets (AssetManagementAPI)'
+2026-06-29 09:17:16.323 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Asset/all?page=1&pageSize=5&category=&status=&sortBy=&sortDirection= - 200 null application/json; charset=utf-8 116.7049ms
+2026-06-29 09:17:20.094 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - null null
+2026-06-29 09:17:20.095 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - null null
+2026-06-29 09:17:20.106 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:20.110 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:20.110 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - 204 null null 16.7438ms
+2026-06-29 09:17:20.117 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - 204 null null 18.9021ms
+2026-06-29 09:17:20.117 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - null null
+2026-06-29 09:17:20.151 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:20.153 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.AssetRequestController.GetPendingRequests (AssetManagementAPI)'
+2026-06-29 09:17:20.157 +05:30 [INF] Route matched with {action = "GetPendingRequests", controller = "AssetRequest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPendingRequests(Int32, Int32) on controller AssetManagementAPI.Controllers.AssetRequestController (AssetManagementAPI).
+2026-06-29 09:17:20.163 +05:30 [INF] Fetching pending requests. Page: 1, PageSize: 5
+2026-06-29 09:17:20.179 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetRequests] AS [a]
+WHERE [a].[Status] = N'Pending'
+2026-06-29 09:17:20.204 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AssetId], [a].[EmployeeId], [a].[RequestDate], [a].[Status]
+FROM [AssetRequests] AS [a]
+WHERE [a].[Status] = N'Pending'
+ORDER BY [a].[RequestDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-06-29 09:17:20.232 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__request_EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__request_EmployeeId_0
+2026-06-29 09:17:20.247 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__request_AssetId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+WHERE [a].[Id] = @__request_AssetId_0
+2026-06-29 09:17:20.254 +05:30 [INF] Executing OkObjectResult, writing value of type 'AssetManagementAPI.DTOs.Common.PagedResponseDTO`1[[AssetManagementAPI.DTOs.Asset.AssetRequestResponseDTO, AssetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-29 09:17:20.267 +05:30 [INF] Executed action AssetManagementAPI.Controllers.AssetRequestController.GetPendingRequests (AssetManagementAPI) in 106.7246ms
+2026-06-29 09:17:20.270 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - null null
+2026-06-29 09:17:20.272 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.AssetRequestController.GetPendingRequests (AssetManagementAPI)'
+2026-06-29 09:17:20.276 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:20.278 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - 200 null application/json; charset=utf-8 164.4409ms
+2026-06-29 09:17:20.279 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.AssetRequestController.GetPendingRequests (AssetManagementAPI)'
+2026-06-29 09:17:20.285 +05:30 [INF] Route matched with {action = "GetPendingRequests", controller = "AssetRequest"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetPendingRequests(Int32, Int32) on controller AssetManagementAPI.Controllers.AssetRequestController (AssetManagementAPI).
+2026-06-29 09:17:20.289 +05:30 [INF] Fetching pending requests. Page: 1, PageSize: 5
+2026-06-29 09:17:20.297 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetRequests] AS [a]
+WHERE [a].[Status] = N'Pending'
+2026-06-29 09:17:20.305 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AssetId], [a].[EmployeeId], [a].[RequestDate], [a].[Status]
+FROM [AssetRequests] AS [a]
+WHERE [a].[Status] = N'Pending'
+ORDER BY [a].[RequestDate] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-06-29 09:17:20.320 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__request_EmployeeId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [e].[Id], [e].[Address], [e].[ContactNumber], [e].[Email], [e].[Gender], [e].[Name], [e].[Password], [e].[Role]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__request_EmployeeId_0
+2026-06-29 09:17:20.330 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__request_AssetId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AssetName], [a].[Category], [a].[PurchaseDate], [a].[SerialNumber], [a].[Status]
+FROM [Assets] AS [a]
+WHERE [a].[Id] = @__request_AssetId_0
+2026-06-29 09:17:20.335 +05:30 [INF] Executing OkObjectResult, writing value of type 'AssetManagementAPI.DTOs.Common.PagedResponseDTO`1[[AssetManagementAPI.DTOs.Asset.AssetRequestResponseDTO, AssetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-29 09:17:20.337 +05:30 [INF] Executed action AssetManagementAPI.Controllers.AssetRequestController.GetPendingRequests (AssetManagementAPI) in 49.796ms
+2026-06-29 09:17:20.341 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.AssetRequestController.GetPendingRequests (AssetManagementAPI)'
+2026-06-29 09:17:20.351 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/AssetRequest/pending?page=1&pageSize=5 - 200 null application/json; charset=utf-8 81.1101ms
+2026-06-29 09:17:25.017 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Audit - null null
+2026-06-29 09:17:25.017 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Audit - null null
+2026-06-29 09:17:25.021 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:25.023 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:25.027 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Audit - 204 null null 9.9615ms
+2026-06-29 09:17:25.028 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Audit - 204 null null 10.7554ms
+2026-06-29 09:17:25.030 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Audit - null null
+2026-06-29 09:17:25.039 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:25.041 +05:30 [INF] Executing endpoint 'AuditController.GetAuditLogs (AssetManagementAPI)'
+2026-06-29 09:17:25.043 +05:30 [INF] Route matched with {action = "GetAuditLogs", controller = "Audit"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuditLogs(System.String, System.String, Int32, Int32) on controller AuditController (AssetManagementAPI).
+2026-06-29 09:17:25.056 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AuditLogs] AS [a]
+2026-06-29 09:17:25.068 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Action], [a].[CreatedAt], [a].[Details], [a].[PerformedBy]
+FROM [AuditLogs] AS [a]
+ORDER BY [a].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-06-29 09:17:25.083 +05:30 [INF] Executing OkObjectResult, writing value of type 'AssetManagementAPI.DTOs.Common.PagedResponseDTO`1[[AssetManagementAPI.DTOs.Asset.AuditLogResponseDTO, AssetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-29 09:17:25.088 +05:30 [INF] Executed action AuditController.GetAuditLogs (AssetManagementAPI) in 41.0372ms
+2026-06-29 09:17:25.090 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Audit - null null
+2026-06-29 09:17:25.091 +05:30 [INF] Executed endpoint 'AuditController.GetAuditLogs (AssetManagementAPI)'
+2026-06-29 09:17:25.094 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:17:25.095 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Audit - 200 null application/json; charset=utf-8 65.8632ms
+2026-06-29 09:17:25.097 +05:30 [INF] Executing endpoint 'AuditController.GetAuditLogs (AssetManagementAPI)'
+2026-06-29 09:17:25.103 +05:30 [INF] Route matched with {action = "GetAuditLogs", controller = "Audit"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAuditLogs(System.String, System.String, Int32, Int32) on controller AuditController (AssetManagementAPI).
+2026-06-29 09:17:25.108 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AuditLogs] AS [a]
+2026-06-29 09:17:25.112 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Action], [a].[CreatedAt], [a].[Details], [a].[PerformedBy]
+FROM [AuditLogs] AS [a]
+ORDER BY [a].[CreatedAt] DESC
+OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+2026-06-29 09:17:25.117 +05:30 [INF] Executing OkObjectResult, writing value of type 'AssetManagementAPI.DTOs.Common.PagedResponseDTO`1[[AssetManagementAPI.DTOs.Asset.AuditLogResponseDTO, AssetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-06-29 09:17:25.118 +05:30 [INF] Executed action AuditController.GetAuditLogs (AssetManagementAPI) in 12.5386ms
+2026-06-29 09:17:25.120 +05:30 [INF] Executed endpoint 'AuditController.GetAuditLogs (AssetManagementAPI)'
+2026-06-29 09:17:25.122 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Audit - 200 null application/json; charset=utf-8 31.6737ms
+2026-06-29 09:26:03.730 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Dashboard/stats - null null
+2026-06-29 09:26:03.731 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7256/api/Dashboard/stats - null null
+2026-06-29 09:26:03.746 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:26:03.756 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:26:03.759 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Dashboard/stats - 204 null null 30.3916ms
+2026-06-29 09:26:03.773 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Dashboard/stats - null null
+2026-06-29 09:26:03.761 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7256/api/Dashboard/stats - 204 null null 30.7373ms
+2026-06-29 09:26:03.796 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:26:03.818 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI)'
+2026-06-29 09:26:03.823 +05:30 [INF] Route matched with {action = "GetDashboardStats", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDashboardStats() on controller AssetManagementAPI.Controllers.DashboardController (AssetManagementAPI).
+2026-06-29 09:26:03.872 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+2026-06-29 09:26:03.888 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+WHERE [a].[Status] = N'Available'
+2026-06-29 09:26:03.907 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetAllocations] AS [a]
+WHERE [a].[Status] = N'Active'
+2026-06-29 09:26:03.920 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetAllocations] AS [a]
+WHERE [a].[Status] = N'Returned'
+2026-06-29 09:26:03.932 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2026-06-29 09:26:03.952 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetRequests] AS [a]
+WHERE [a].[Status] = N'Pending'
+2026-06-29 09:26:03.961 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-29 09:26:03.968 +05:30 [INF] Executed action AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI) in 134.9781ms
+2026-06-29 09:26:03.974 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7256/api/Dashboard/stats - null null
+2026-06-29 09:26:03.979 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI)'
+2026-06-29 09:26:03.994 +05:30 [INF] CORS policy execution successful.
+2026-06-29 09:26:03.997 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Dashboard/stats - 200 null application/json; charset=utf-8 224.2728ms
+2026-06-29 09:26:04.001 +05:30 [INF] Executing endpoint 'AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI)'
+2026-06-29 09:26:04.022 +05:30 [INF] Route matched with {action = "GetDashboardStats", controller = "Dashboard"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetDashboardStats() on controller AssetManagementAPI.Controllers.DashboardController (AssetManagementAPI).
+2026-06-29 09:26:04.042 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+2026-06-29 09:26:04.057 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Assets] AS [a]
+WHERE [a].[Status] = N'Available'
+2026-06-29 09:26:04.079 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetAllocations] AS [a]
+WHERE [a].[Status] = N'Active'
+2026-06-29 09:26:04.094 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetAllocations] AS [a]
+WHERE [a].[Status] = N'Returned'
+2026-06-29 09:26:04.106 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [Employees] AS [e]
+2026-06-29 09:26:04.123 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM [AssetRequests] AS [a]
+WHERE [a].[Status] = N'Pending'
+2026-06-29 09:26:04.132 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`6[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-06-29 09:26:04.142 +05:30 [INF] Executed action AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI) in 111.536ms
+2026-06-29 09:26:04.150 +05:30 [INF] Executed endpoint 'AssetManagementAPI.Controllers.DashboardController.GetDashboardStats (AssetManagementAPI)'
+2026-06-29 09:26:04.156 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7256/api/Dashboard/stats - 200 null application/json; charset=utf-8 182.5257ms
+2026-06-29 15:06:39.899 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:06:40.010 +05:30 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:06:40.016 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:06:40.018 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:06:40.102 +05:30 [INF] Executed DbCommand (56ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-29 15:06:40.126 +05:30 [INF] Applying migration '20260629093626_AddServiceRequest'.
+2026-06-29 15:06:40.247 +05:30 [INF] Executed DbCommand (64ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ServiceRequests] (
+    [Id] int NOT NULL IDENTITY,
+    [AssetId] int NOT NULL,
+    [EmployeeId] int NOT NULL,
+    [IssueType] int NOT NULL,
+    [Descripcion] nvarchar(max) NOT NULL,
+    [Status] nvarchar(max) NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [ResolvedDate] datetime2 NULL,
+    CONSTRAINT [PK_ServiceRequests] PRIMARY KEY ([Id])
+);
+2026-06-29 15:06:40.262 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260629093626_AddServiceRequest', N'8.0.8');
+2026-06-29 15:12:20.476 +05:30 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:12:20.573 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:12:20.620 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-29 15:12:39.319 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:12:39.403 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:12:39.429 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-29 15:13:10.942 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:13:11.039 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:13:11.043 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:13:11.045 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:13:11.079 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-29 15:13:11.106 +05:30 [INF] Reverting migration '20260629093626_AddServiceRequest'.
+2026-06-29 15:13:11.173 +05:30 [INF] Executed DbCommand (32ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DROP TABLE [ServiceRequests];
+2026-06-29 15:13:11.191 +05:30 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+DELETE FROM [__EFMigrationsHistory]
+WHERE [MigrationId] = N'20260629093626_AddServiceRequest';
+2026-06-29 15:13:25.223 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:13:25.302 +05:30 [INF] Executed DbCommand (20ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:13:25.328 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-29 15:13:55.360 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:13:55.434 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:13:55.438 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-06-29 15:13:55.440 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-06-29 15:13:55.467 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-06-29 15:13:55.488 +05:30 [INF] Applying migration '20260629094340_AddServiceRequest'.
+2026-06-29 15:13:55.554 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [ServiceRequests] (
+    [Id] int NOT NULL IDENTITY,
+    [AssetId] int NOT NULL,
+    [EmployeeId] int NOT NULL,
+    [IssueType] int NOT NULL,
+    [Descripcion] nvarchar(max) NOT NULL,
+    [Status] int NOT NULL,
+    [CreatedAt] datetime2 NOT NULL,
+    [ResolvedDate] datetime2 NULL,
+    CONSTRAINT [PK_ServiceRequests] PRIMARY KEY ([Id])
+);
+2026-06-29 15:13:55.561 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260629094340_AddServiceRequest', N'8.0.8');
