@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AssetManagementAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260629094340_AddServiceRequest")]
+    [Migration("20260630033129_AddServiceRequest")]
     partial class AddServiceRequest
     {
         /// <inheritdoc />
@@ -167,7 +167,7 @@ namespace AssetManagementAPI.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Descripcion")
+                    b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

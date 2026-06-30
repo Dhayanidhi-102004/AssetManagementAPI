@@ -1,5 +1,6 @@
 ﻿using AssetManagementAPI.DTOs.Asset;
 using AssetManagementAPI.DTOs.Employee;
+using AssetManagementAPI.DTOs.ServiceRequest;
 using AssetManagementAPI.Models;
 using AutoMapper;
 
@@ -16,6 +17,8 @@ namespace AssetManagementAPI.Mapping
             CreateMap<Asset, AssetResponseDTO>();
 
             CreateMap<Employee, EmployeeResponseDTO>();
+
+            CreateMap<ServiceRequest, ServiceRequestResponseDTO>();
         }
     }
 }
