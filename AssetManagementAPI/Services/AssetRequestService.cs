@@ -123,7 +123,7 @@ namespace AssetManagementAPI.Services
                 };
 
                 _context.AssetRequests.Add(request);
-                asset.Status = "Pending";
+                //asset.Status = "Pending";
                 _context.SaveChanges();
                 _logger.LogInformation("Asset request created successfully. AssetId: {AssetId}, EmployeeId: {EmployeeId}",
         assetId,
